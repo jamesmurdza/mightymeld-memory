@@ -9,7 +9,7 @@ export function Tile({ content: Content, flip, state }) {
       );
     case "flipped":
       return (
-        <Front className="aspect-square rounded-lg flex items-center justify-center p-2 bg-indigo-600 text-white">
+        <Front className="aspect-square rounded-lg flex items-center justify-center p-2 bg-indigo-600 text-white spin-once animate-spin-once-fast">
           <Content
             style={{
               display: "inline-block",
@@ -22,7 +22,7 @@ export function Tile({ content: Content, flip, state }) {
       );
     case "matched":
       return (
-        <Matched className="aspect-square rounded-lg flex items-center justify-center p-2 text-indigo-200">
+        <Matched className="aspect-square rounded-lg flex items-center justify-center p-2 text-indigo-200 animate-grow-once">
           <Content
             style={{
               display: "inline-block",

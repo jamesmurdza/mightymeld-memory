@@ -18,12 +18,12 @@ export const possibleTileContents = [
 
 export function StartScreen({ start }) {
   return (
-    <div className="text-center text-pink-500 bg-pink-50 m-10 p-10 mt-20 rounded-lg text-sm">
+    <div className="text-center text-pink-500 bg-pink-50 m-10 p-10 mt-20 rounded-lg text-sm animate-drop-once">
       <h1 className="text-2xl font-semibold py-5">Memory</h1>
       <p>Flip over tiles looking for pairs</p>
       <button
         onClick={start}
-        className="bg-gradient-to-b from-pink-400 to-pink-600 text-white py-1 px-10 rounded-3xl drop-shadow-md mt-10 mb-24"
+        className="bg-gradient-to-b from-pink-400 to-pink-600 text-white py-1 px-10 rounded-3xl drop-shadow-md mt-10 mb-24 animate-spin-once"
       >
         Play
       </button>
